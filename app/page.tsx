@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Header } from "@/app/components/header";
 import AcmeLogo from "@/app/ui/acme-logo";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
-import Link from "next/link";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
+      <Header />
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
         <AcmeLogo />
       </div>
@@ -15,7 +17,8 @@ export default function Page() {
           <p
             className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className} antialiased`}
           >
-            <strong>Xin Chào</strong> Mình là Berry. Bố mình làm cho mình trang web này 😊
+            <strong>Xin Chào</strong> Mình là Berry. Bố mình làm cho mình trang
+            web này 😊
           </p>
           <Link
             href="/"

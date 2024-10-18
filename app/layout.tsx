@@ -10,7 +10,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
-        <title>Tư vấn luật</title>
+        <title>Tư vấn luật Ngọc Ánh</title>
       </head>
       <AppRouterCacheProvider>
         <body className={`${inter.className} antialiased`}>{children}</body>
